@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.card-item{
+  font-size: small;
+}
+.filters{
+  font-size: small;
+}
+.card, .form-control,.btn{
+  border-radius: 3px;
+}
+.total{
+  background-color: #343a40;
+  color: antiquewhite;
+}
+.product-btn{
+  font-size: small;
+  display: flex;
+}

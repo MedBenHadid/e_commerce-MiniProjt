@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let i of [1,2,3,4,5]" >
+  <app-cart-item></app-cart-item>
+  </li>
+  <li class="list-group-item total">
+    <strong>Total </strong>: {{ 1000 | currency : "EUR"}}
+  </li>
+</ul>
