@@ -1,8 +1,14 @@
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let i of [1,2,3,4,5]" >
-  <app-cart-item></app-cart-item>
+<div *ngIf="cartItems.length === 0" class="alert alert-info"> Your cart is empty !</div>
+<ul *ngIf="cartItems.length > 0" class="list-group">
+  <li class="list-group"  *ngFor="let item of cartItems">
+  <app-cart-item class="list-group-item" *ngIf="item.qty >0" [cartItem] = "item" (Minus)="changeQNT($event)"></app-cart-item>
+    <div *ngIf="cartItems.length === 0" class="alert alert-info"> Your cart is empty !</div>
   </li>
-  <li class="list-group-item total">
-    <strong>Total </strong>: {{ 1000 | currency : "EUR"}}
+  <li class="list-group-item total" *ngIf="cartTotal>0 ; else elseBlock">
+    <strong>Total </strong>: {{ cartTotal | currency : "EUR"}}
   </li>
+  <ng-template #elseBlock>
+    <div class="alert alert-info"> Your cart is empty !</div>
+  </ng-template>
+
 </ul>

@@ -1,3 +1,13 @@
-<div class="cart-item">
-  <span>Item 1</span> x <span>4</span>: <span>{{500 |currency :'EUR'}}</span>
+<div class="cart-item ">
+  <div class="d-flex justify-content-between ">
+   <div> <span>{{cartItem.productName}}</span> x <span>{{cartItem.qty}}</span>:
+    <span>{{cartItem.qty * cartItem.price |currency :'EUR'}}</span>
+    <button type="button" class="btn btn-danger ml-2"
+            (click) = "handlerMinusProduct()"
+    >-</button>
+   </div>
+  </div>
+
+
+
 </div>

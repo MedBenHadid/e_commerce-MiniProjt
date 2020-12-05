@@ -1,13 +1,15 @@
 <div class="card mb-4 shadow-sm">
-  <img class="bd-placeholder-img card-img-top " width="100%" src="https://digitalcontent.api.tesco.com/v2/media/ghs/2d34dfc5-d242-4e40-84e4-d47b921b2e88/snapshotimagehandler_1904092184.jpeg?h=540&w=540" />
+  <img class="bd-placeholder-img card-img-top " width="100%" [src]="productItem.imagUrl" />
   <div class="card-body">
-    <p class="card-text">
-      <strong>{{250 | currency : "EUR"}}</strong>
+    <p class="card-text d-flex justify-content-between">
+      {{productItem.name}}<strong>{{productItem.price | currency : "EUR"}}</strong>
     </p>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+    <p class="card-text">{{productItem.description}}</p>
     <div class="d-flex justify-content-between align-items-center">
       <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-outline-primary product-btn">add to cart</button>
+        <button type="button" class="btn btn-sm btn-outline-primary product-btn"
+        (click) = "handlerAddToCart()"
+        >add to cart</button>
         <button type="button" class="btn btn-sm btn-outline-secondary product-btn">View details</button>
 
       </div>

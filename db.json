@@ -1,4 +1,93 @@
 {
+  "products": [{
+    "id": 1,
+    "name": "Product 1",
+    "description": "fsdfkj",
+    "imgUrl": "https://images.app.goo.gl/tKaU72kZvGT9NFWw9",
+    "price": 29
+  },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "fsdfkj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 59
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "description": "fsdfkj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 90
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "description": "fsdfkfsdfdfsfsfj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 90
+    }
+  ],
+  "cart": [{
+  "product": {
+    "id": 1,
+    "name": "fhisd",
+    "description": "fsdfkj",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+    "price": 99
+  },
+  "id": 1
+},
+  {
+    "product": {
+      "id": 2,
+      "name": "isd",
+      "description": "fsdfkj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 99
+    },
+    "id": 2
+  },
+  {
+    "product": {
+      "id": 3,
+      "name": "hisd",
+      "description": "fsdfkj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 99
+    },
+    "id": 3
+  },
+  {
+    "product": {
+      "id": 2,
+      "name": "isd",
+      "description": "fsdfkj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 99
+    },
+    "id": 4
+  },
+  {
+    "product": {
+      "id": 2,
+      "name": "isd",
+      "description": "fsdfkj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 99
+    },
+    "id": 5
+  },
+  {
+    "product": {
+      "id": 2,
+      "name": "isd",
+      "description": "fsdfkj",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41lHaeh3DVL._SY450_.jpg",
+      "price": 99
+    },
+    "id": 6
+  }],
   "posts": [
     {
       "id": 1,

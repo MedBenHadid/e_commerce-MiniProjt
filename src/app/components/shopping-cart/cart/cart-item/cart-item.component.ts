@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-cart-item',
@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-item.component.css']
 })
 export class CartItemComponent implements OnInit {
-
+  @Input() cartItem: any;
+  @Output() Minus =new EventEmitter;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  handlerMinusProduct() {
+    if(this.cartItem.qty>0) {
+      this.Minus.emit(
+        this.cartItem
+      );
+    }
+
+
+  }
 }
