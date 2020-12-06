@@ -3,33 +3,33 @@
     {
       "id": 1,
       "name": "Product 1",
-      "description": "fsdfkj",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
       "imgUrl": "https://www.deltarentals.com.au/wp-content/uploads/2019/04/Budget-Gaming-PC-1.jpg",
       "price": 29
     },
     {
       "id": 2,
       "name": "Product 2",
-      "description": "fsdfkj",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
       "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
       "price": 59
     },
     {
       "id": 3,
       "name": "Product 3",
-      "description": "fsdfkj",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
       "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
       "price": 90
     },
     {
       "id": 4,
       "name": "Product 4",
-      "description": "fsdfkfsdfdfsfsfj",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
       "imgUrl": "https://www.xidax.com/skins/default/images/c3be8-case.png",
       "price": 90
     }
   ],
-  "wishlist": [],
+  "likeslist": [],
   "cart": [],
   "posts": [
     {

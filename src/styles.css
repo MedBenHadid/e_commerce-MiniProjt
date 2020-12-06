@@ -16,3 +16,8 @@
   font-size: small;
   display: flex;
 }
+
+.fa-heart{
+  color: deeppink;
+  cursor: pointer;
+}

@@ -4,6 +4,8 @@
 
     <p class="card-text d-flex justify-content-between">
       {{productItem.name}}<strong>{{productItem.price | currency : "EUR"}}</strong>
+      <i *ngIf="addedToLikesList" class="fas fa-heart " (click)="handlerToRemoveFromLikeslist()"></i>
+      <i *ngIf="!addedToLikesList" class="far fa-heart " (click)="handlerToAddToLikeslist()"></i>
     </p>
     <p class="card-text">{{productItem.description | slice: 0:70}} ...</p>
     <div class="d-flex justify-content-between align-items-center">
@@ -18,3 +20,5 @@
     </div>
   </div>
 </div>
+
+
