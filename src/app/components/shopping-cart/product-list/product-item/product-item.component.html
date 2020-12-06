@@ -1,15 +1,17 @@
 <div class="card mb-4 shadow-sm">
-  <img class="bd-placeholder-img card-img-top " width="100%" [src]="productItem.imagUrl" />
+  <img class="bd-placeholder-img card-img-top " width="100%" [src]="productItem.imgUrl" />
   <div class="card-body">
+
     <p class="card-text d-flex justify-content-between">
       {{productItem.name}}<strong>{{productItem.price | currency : "EUR"}}</strong>
     </p>
-    <p class="card-text">{{productItem.description}}</p>
+    <p class="card-text">{{productItem.description | slice: 0:70}} ...</p>
     <div class="d-flex justify-content-between align-items-center">
       <div class="btn-group">
         <button type="button" class="btn btn-sm btn-outline-primary product-btn"
         (click) = "handlerAddToCart()"
-        >add to cart</button>
+        >add to cart
+        </button>
         <button type="button" class="btn btn-sm btn-outline-secondary product-btn">View details</button>
 
       </div>

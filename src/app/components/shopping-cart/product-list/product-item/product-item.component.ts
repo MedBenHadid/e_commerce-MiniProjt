@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Product} from '../../../../models/product';
 import {MessengerService} from '../../../../services/messenger.service';
+import {CartService} from '../../../../services/cart.service';
 
 @Component({
   selector: 'app-product-item',
@@ -9,12 +10,15 @@ import {MessengerService} from '../../../../services/messenger.service';
 })
 export class ProductItemComponent implements OnInit {
   @Input() productItem: Product;
-  constructor(private msg: MessengerService) {  }
+  // tslint:disable-next-line:no-shadowed-variable
+  constructor(private msg: MessengerService, private cartService: CartService) {  }
 
   ngOnInit(): void {
   }
   handlerAddToCart(){
-    this.msg.sendMsg(this.productItem);
+    this.cartService.addProductToCart(this.productItem).subscribe(() => {
+      this.msg.sendMsg(this.productItem);
+    });
   }
 
 }
