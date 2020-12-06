@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {MessengerService} from '../../../services/messenger.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  @Output() shearchOutput = new EventEmitter<string>();
 
-  constructor() { }
+  @Output() shearchInput = '';
+  constructor(private msg: MessengerService) { }
 
   ngOnInit(): void {
   }
+
+
+  changeValue() {
+
+    this.msg.sendMsg(this.shearchInput);
+    }
 
 }

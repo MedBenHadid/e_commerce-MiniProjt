@@ -15,6 +15,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import {AppRoutingModule} from './app-routing.module';
+import { PageNotfountComponent } from './components/shared/page-notfount/page-notfount.component';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,11 +31,13 @@ import {AppRoutingModule} from './app-routing.module';
     ProductItemComponent,
     LoginComponent,
     RegisterComponent,
+    PageNotfountComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
