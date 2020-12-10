@@ -17,6 +17,7 @@ import { RegisterComponent } from './components/register/register.component';
 import {AppRoutingModule} from './app-routing.module';
 import { PageNotfountComponent } from './components/shared/page-notfount/page-notfount.component';
 import {FormsModule} from '@angular/forms';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import {FormsModule} from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     PageNotfountComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -22,21 +22,22 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.loadLikeslist();
     this.loadProducts();
-
+    console.log("userFromStoregeInProductList: " + sessionStorage.getItem('userGoogleToken'));
     this.msg.getMsg().subscribe((val: string) => {
-      if( val != ''){
-      this.productList = this.productList.filter((value) => {
-        return value.name.match('/' + val + '.*/');
-      });
+      if ( val !== '' ){
+        console.log(val);
+        let regex = new RegExp(val, 'i'); 	// Create a regex object (a constructor).
+        this.productList  = this.productList.filter(item => regex.test(item.name));
+        console.log(this.productList);
       }else{
         this.loadProducts();
       }
     });
+   // console.log(sessionStorage.getItem('userGoogle'));
 
   }
 
   loadProducts(){
-
     this.productService.getProducts().subscribe((products) => {
       this.productList = products;
     });

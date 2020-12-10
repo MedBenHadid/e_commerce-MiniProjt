@@ -38,19 +38,20 @@ export class CartService {
       );
   }
 
+
   addProductToCart(product: Product): Observable<any>{
-    return this.http.post(cartUrl, { product });
+    return this.http.post(cartUrl, {product});
+
+
   }
 
  DeleteProductFromCart(id: any) {
 
    this.getCartItems().subscribe((cartItem) => {
-     console.log(id);
 
      for (let i = 0 ; i < cartItem.length; i++) {
        if (cartItem[i].productId === id) {
          this.http.delete(cartUrl + '/' +  cartItem[i].id ).subscribe(data => {
-           console.log('done ! :' + data);
          });
          break;
        }

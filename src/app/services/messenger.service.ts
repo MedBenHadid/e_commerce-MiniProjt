@@ -9,7 +9,6 @@ export class MessengerService {
   constructor() { }
   sendMsg(product){
     this.subject.next(product); //trigger event
- //   console.log(product);
   }
   getMsg(){
     return this.subject.asObservable();

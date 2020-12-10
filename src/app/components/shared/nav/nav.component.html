@@ -1,3 +1,4 @@
+<script src="../../../services/login.service.ts"></script>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="#">
   </a>
@@ -11,17 +12,18 @@
         <a class="nav-link" [routerLink]="['/shop']">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item mx-5">
-
+<!--        <a class="nav-link" *ngIf="isLogin" [routerLink]="['/shop']">Hello {{userTokenFromStorege}}</a>-->
       </li>
       <li class="nav-item row">
           <input class="form-control mr-sm-2 col" style="width: 300px" type="text" placeholder="Search" aria-label="Search" [(ngModel)]="shearchInput" (change)="changeValue()">
-          <button class="btn btn-outline-info my-2 my-sm-0 col" style="width: 5px" type="submit" >Search</button>
+          <button class="btn btn-outline-info my-2 my-sm-0 col" style="width: 5px" type="submit" (click)="changeValue()">Search</button>
       </li>
     </ul>
 
-  <div>
+  <div *ngIf="!isLogin">
     <a class="btn btn-dark mr-1" style="color: antiquewhite" [routerLink]="['/login']"> &nbsp; Login &nbsp;</a>
     <a class="btn btn-outline-success" [routerLink]="['/register']">Register</a>
   </div>
+    <a *ngIf="isLogin" class="btn btn-outline-success"  (click)="logout()">Logout</a>
   </div>
 </nav>

@@ -29,8 +29,33 @@
       "price": 90
     }
   ],
-  "likeslist": [],
-  "cart": [],
+  "likeslist": [
+    {
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": 59
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": 59
+      },
+      "id": 2
+    }
+  ],
   "posts": [
     {
       "id": 1,
