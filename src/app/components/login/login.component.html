@@ -1,3 +1,5 @@
+<app-nav></app-nav>
+
 <div  class="d-flex justify-content-center" >
 <div style="width : 40%">
   <div class="card">
@@ -5,25 +7,25 @@
     <a [routerLink]="['/register']" class="float-right btn btn-outline-success">Register</a>
     <h4 class="card-title mb-4 mt-1">Login</h4>
     <p>
-      <a class="btn btn-block btn-outline-danger g-signin2" (click)="login()" > <i class="fab fa-google"></i>   Login via Google</a>
+      <a class="btn btn-block btn-outline-danger g-signin2" (click)="loginGoole()" > <i class="fab fa-google"></i>   Login via Google</a>
       <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
     </p>
     <hr>
-
+    <div *ngIf="notValid" class="alert alert-danger">Please check your information !</div>
     <form #loginForm="ngForm" (ngSubmit)="loginForm.valid && login()">
       <div class="form-group">
         <input class="form-control" [ngClass]="{'is-invalid' : email.touched && email.invalid}" name="email" placeholder="Email or login" type="email" #email="ngModel" [(ngModel)]="model.email" required>
         <span class="invalid-feedback">Email can't be blank !</span>
       </div> <!-- form-group// -->
       <div class="form-group">
-        <input class="form-control" [ngClass]="{'is-invalid' : password.touched && password  .invalid}" name="password" placeholder="******" type="password" #password="ngModel" [(ngModel)]="model.password" required>
+        <input class="form-control" [ngClass]="{'is-invalid' : password.touched && password  .invalid}" name="password" placeholder="******" type="password" #password="ngModel" [(ngModel)]="model.password"  required>
         <span class="invalid-feedback">password can't be blank !</span>
 
       </div> <!-- form-group// -->
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block" [disabled]="loginForm.invalid"> Login </button>
+            <button type="submit" class="btn btn-primary btn-block" [disabled]="loginForm.invalid" > Login </button>
           </div> <!-- form-group// -->
         </div>
         <div class="col-md-6 text-right">

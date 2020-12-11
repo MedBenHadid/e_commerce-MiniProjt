@@ -1,4 +1,95 @@
 {
+  "users": [
+    {
+      "email": "benhdid21@gmail.com",
+      "password": "$2a$10$A8UPgyBRP6OeBsI94Iys6eSpTXTL3X7mplrbp9WyQj1RrXraRqWw2",
+      "firstName": "Mohamed ",
+      "lastName": "B'n ֎",
+      "username": "medbenhadid",
+      "confirmPassword": "aaaaa",
+      "id": 2
+    },
+    {
+      "email": "mohamed.benhadid@esprit.tn",
+      "password": "$2a$10$b8ULKTJ94FDkGR5yJ9IzlOdEiQ5RsEAdBP1Hj5/YxBGomwjx0pXx.",
+      "firstName": "Mohamed B'n",
+      "lastName": "֎",
+      "username": "medbenhadid",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 1,
+      "id": 3
+    },
+    {
+      "email": "mohamed.benhadid@gg.tn",
+      "password": "$2a$10$.V8HP.aMKJEfJZlKkSMAcOlHBqE1XqDskCVNjMJ.rI5LIPd.DMWFu",
+      "firstName": "Mohamed B'n",
+      "lastName": "֎",
+      "username": "Med",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 0,
+      "id": 4
+    },
+    {
+      "email": "mohamed.benhadid@ggg.tn",
+      "password": "$2a$10$xBda4eLAK5HGALo9E2P.2uT.3ld4fZlOeNWAcmGfhZ4GjqhPmSVgO",
+      "firstName": "Mohamed",
+      "lastName": "֎",
+      "username": "medbenhadid",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 0,
+      "id": 5
+    },
+    {
+      "email": "mohamed.benhadid@dgg.tn",
+      "password": "$2a$10$YSYIjIu0v8B28mGe..ugROabWD4t7fJGhpWxBJgOUd0lUMH8SGTkm",
+      "firstName": "Mohamed",
+      "lastName": "֎",
+      "username": "dd",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 0,
+      "id": 6
+    },
+    {
+      "email": "benhdid21@gmfdail.com",
+      "password": "$2a$10$igSqY47LLbiifT.L5GX9N./1MJhU.CN199TpeJA25B.bVWfn8ElRO",
+      "firstName": "dsdsq",
+      "lastName": "f",
+      "username": "ddffvd",
+      "confirmPassword": "aaaaaa",
+      "isAdmin": 0,
+      "id": 7
+    },
+    {
+      "email": "mohamed.benhadid@essprit.tn",
+      "password": "$2a$10$j1qOMaG5uGsW1tLfwvP.6ODEmovk9SWbIDR.G7tVmcwFNE.z2UqYi",
+      "firstName": "Mohamed B'n",
+      "lastName": "֎",
+      "username": "aaaa",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 0,
+      "id": 8
+    },
+    {
+      "email": "mohamed.benhadid@esvprit.tn",
+      "password": "$2a$10$faLY6EcR5nPcMToG4EEaeO/xUktcnzTBXR1NaLpYDqqr8ZQDoEGzy",
+      "firstName": "Mohamed B'n",
+      "lastName": "֎",
+      "username": "med",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 0,
+      "id": 9
+    },
+    {
+      "email": "mohamed.besnhadid@esprit.tn",
+      "password": "$2a$10$K6ggFcTgCxTw9c3b3qi0EuiRBeBo8QceYZXHP3vXmYnn39Jd32zxu",
+      "firstName": "Mohamed B'n",
+      "lastName": "֎",
+      "username": "asa",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 0,
+      "id": 10
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -9,24 +100,17 @@
     },
     {
       "id": 2,
-      "name": "Product 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+      "name": "Product 3",
+      "description": "&",
       "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-      "price": 59
+      "price": "59"
     },
     {
       "id": 3,
-      "name": "Product 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-      "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
-      "price": 90
-    },
-    {
-      "id": 4,
       "name": "Product 4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-      "imgUrl": "https://www.xidax.com/skins/default/images/c3be8-case.png",
-      "price": 90
+      "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
+      "price": "90"
     }
   ],
   "likeslist": [

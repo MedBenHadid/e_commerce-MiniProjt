@@ -11,9 +11,12 @@
       <li class="nav-item active">
         <a class="nav-link" [routerLink]="['/shop']">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item mx-5">
-<!--        <a class="nav-link" *ngIf="isLogin" [routerLink]="['/shop']">Hello {{userTokenFromStorege}}</a>-->
+      <li class="nav-item mx-5 d-flex justify-content-center">
+        <a class="nav-link" *ngIf="isLogin" [routerLink]="['/shop']">Hello {{CurrentUserFromStorege.username}}</a>
+        <button class="nav-link" *ngIf="isLogin && CurrentUserFromStorege.isAdmin" class="btn btn-outline-warning ml-3" [routerLink]="['/crud-product']">Updates</button>
+
       </li>
+
       <li class="nav-item row">
           <input class="form-control mr-sm-2 col" style="width: 300px" type="text" placeholder="Search" aria-label="Search" [(ngModel)]="shearchInput" (change)="changeValue()">
           <button class="btn btn-outline-info my-2 my-sm-0 col" style="width: 5px" type="submit" (click)="changeValue()">Search</button>

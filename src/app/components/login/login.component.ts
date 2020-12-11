@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from '../../services/login.service';
 import {ProductService} from '../../services/product.service';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {AuthServiceService} from '../../services/auth-service.service';
+import {Router} from '@angular/router';
+import {first} from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -8,32 +12,50 @@ import {ProductService} from '../../services/product.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  formGroup: FormGroup;
   model: any = {};
-  private gapiSetup: Boolean;
+  private gapiSetup: boolean;
   private authInstance: any;
-  private user: gapi.auth2.GoogleUser;
+  notValid = false;
 
   constructor(private loginService: LoginService,
+              private authService: AuthServiceService,
+              private route: Router
   ) {
   }
 
-  async ngOnInit(): Promise<void> {
+  ngOnInit() {
+    this.initForm();
   }
 
-  // @ts-ignore
-  // onSignIn() {
-  //   const profile = googleUser.getBasicProfile();
-  //   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  //   console.log('Name: ' + profile.getName());
-  //   console.log('Image URL: ' + profile.getImageUrl());
-  //   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  // }
-  login() {
+  initForm() {
+    this.formGroup = new FormGroup({
+      email: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required])
+
+    });
+  }
+
+
+  loginGoole() {
     this.loginService.authenticate();
-   // console.log(JSON.parse(sessionStorage.getItem('userGoogle')));
   }
 
+
+  login() {
+    this.authService.login(this.model)
+      .subscribe( (result) => {
+        const user = result;
+        console.log(user);
+        // localStorage.setItem('currentUser', JSON.stringify(user));
+        // console.log(localStorage.getItem('currentUser'));
+        this.route.navigate(['/shop']);
+
+      },(error) => {
+        console.log('error login: ' + error);
+        this.notValid = true;
+      });
+
+  }
 
 }
-

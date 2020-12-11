@@ -16,8 +16,9 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import {AppRoutingModule} from './app-routing.module';
 import { PageNotfountComponent } from './components/shared/page-notfount/page-notfount.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { ProductCrudComponent } from './components/product-crud/product-crud.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,12 +35,14 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     RegisterComponent,
     PageNotfountComponent,
     ProductDetailsComponent,
+    ProductCrudComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

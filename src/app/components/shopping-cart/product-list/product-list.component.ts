@@ -22,7 +22,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.loadLikeslist();
     this.loadProducts();
-    console.log("userFromStoregeInProductList: " + sessionStorage.getItem('userGoogleToken'));
+    // console.log("userFromStoregeInProductList: " + sessionStorage.getItem('currentUser'));
     this.msg.getMsg().subscribe((val: string) => {
       if ( val !== '' ){
         console.log(val);
