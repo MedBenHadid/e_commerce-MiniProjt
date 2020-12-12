@@ -24,9 +24,9 @@
     </ul>
 
   <div *ngIf="!isLogin">
-    <a class="btn btn-dark mr-1" style="color: antiquewhite" [routerLink]="['/login']"> &nbsp; Login &nbsp;</a>
+    <a class="btn btn-dark mr-1" style="color: #22a0b4" [routerLink]="['/login']"> &nbsp; Login &nbsp;</a>
     <a class="btn btn-outline-success" [routerLink]="['/register']">Register</a>
   </div>
-    <a *ngIf="isLogin" class="btn btn-outline-success"  (click)="logout()">Logout</a>
+    <a *ngIf="isLogin" class="btn btn-outline-danger"  (click)="logout()">Logout</a>
   </div>
 </nav>

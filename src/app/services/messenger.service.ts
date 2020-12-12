@@ -6,6 +6,8 @@ import {Subject} from 'rxjs';
 })
 export class MessengerService {
   subject = new Subject();
+  subjectFilter = new Subject();
+
   constructor() { }
   sendMsg(product){
     this.subject.next(product); //trigger event
@@ -13,4 +15,12 @@ export class MessengerService {
   getMsg(){
     return this.subject.asObservable();
   }
+  sendMsgfilter(filterModel){
+    this.subjectFilter.next(filterModel);
+  }
+  getMsgfilter(){
+    return this.subjectFilter.asObservable();
+  }
+
+
 }

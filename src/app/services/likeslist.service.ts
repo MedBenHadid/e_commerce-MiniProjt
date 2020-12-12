@@ -7,21 +7,25 @@ import {map} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class LikeslistService {
+  CurrentUserFromStorege: any;
 
   constructor(private http: HttpClient) { }
   getLikesList(){
+    this.CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
+
     return this.http.get(likeslistUrl).pipe(
       map((result: any[]) => {
           const productIds = [];
           result.forEach(item => {
-            productIds.push(item.id);
+              productIds.push(item.id);
           });
           return productIds;
       })
     );
   }
   addToLikesList(productId){
-      return this.http.post(likeslistUrl , { id: productId });
+    this.CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
+    return this.http.post(likeslistUrl , { id: productId, idUser: this.CurrentUserFromStorege.id });
   }
 
   removeFromLikesList(productId){

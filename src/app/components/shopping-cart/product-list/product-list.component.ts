@@ -33,6 +33,31 @@ export class ProductListComponent implements OnInit {
         this.loadProducts();
       }
     });
+
+    this.msg.getMsgfilter().subscribe((filterModel) => {
+      let productListCopy
+      if (filterModel){
+        if (!filterModel.fromInput){
+          this.productList = this.productList.filter(item => {
+            return item.price < filterModel.toInput;
+          });
+
+        }else if(!filterModel.toInput){
+          this.productList = this.productList.filter(item => {
+            return item.price > filterModel.fromInput;
+          });
+        }else{
+          this.productList = this.productList.filter(item => {
+            return item.price > filterModel.fromInput && item.price < filterModel.toInput;
+          });
+        }
+
+      }else{
+        this.loadProducts();
+      }
+
+      console.log(filterModel);
+    });
    // console.log(sessionStorage.getItem('userGoogle'));
 
   }

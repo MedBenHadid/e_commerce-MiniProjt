@@ -13,23 +13,25 @@ import {map} from 'rxjs/operators';
 export class CartService {
   objs: CartItem[] = [];
   public itemToDelete: number;
+  CurrentUserFromStorege : any;
 
   constructor(private http: HttpClient) { }
   getCartItems(): Observable<CartItem[]>{
-    // DONE : Mapping the obtained result to our CartItem props
-      return this.http.get<CartItem[]>(cartUrl).pipe(
+    this.CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
+
+    return this.http.get<CartItem[]>(cartUrl).pipe(
         map((result: any[]) => {
           let cartItems: CartItem[] = [];
           for (let item of result ){
             let productExist = false;
             for (const i in cartItems) {
-              if (cartItems[i].productId === item.product.id) {
+              if (cartItems[i].productId === item.product.id ) {
                 cartItems[i].qty++;
                 productExist = true;
                 break;
               }
             }
-            if (!productExist){
+            if (!productExist && item.idUser === this.CurrentUserFromStorege.id){
               cartItems.push(new CartItem(item.id, item.product));
           }
         }
@@ -40,9 +42,8 @@ export class CartService {
 
 
   addProductToCart(product: Product): Observable<any>{
-    return this.http.post(cartUrl, {product});
-
-
+    const CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
+    return this.http.post(cartUrl, {product, idUser: CurrentUserFromStorege.id});
   }
 
  DeleteProductFromCart(id: any) {

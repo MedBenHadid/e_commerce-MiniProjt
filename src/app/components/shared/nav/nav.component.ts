@@ -30,7 +30,8 @@ export class NavComponent implements OnInit {
 
 
    ngOnInit(){
-      this.CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
+
+     this.CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
       console.log('CurrentUser : ' + JSON.stringify(this.CurrentUserFromStorege));
          // this.isLogin = await this.loginService.checkIfUserAutehenticated();
 
@@ -38,6 +39,7 @@ export class NavComponent implements OnInit {
           this.isLogin = true;
         }else {
           this.isLogin = false;
+
         }
   }
 
@@ -55,7 +57,6 @@ logout(){
     this.route.navigate(['/login']).then(() => console.log('/shop'));
 
    this.loginService.signOut();
-    //console.log('logout' + this.userTokenFromStorege );
 }
 
 

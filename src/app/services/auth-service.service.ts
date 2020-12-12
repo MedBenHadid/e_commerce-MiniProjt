@@ -38,13 +38,13 @@ export class AuthServiceService {
               user.isAdmin = res.isAdmin;
               user.username = res.username;
               user.profilePicture = res.profilePicture;
+              console.log(user);
               localStorage.setItem('currentUser', JSON.stringify(user));
 
           });
 
 
       }
-        // this.currentUserSubject.next(user);
 
       return user;
 

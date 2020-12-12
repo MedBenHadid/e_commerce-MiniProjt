@@ -43,16 +43,14 @@ export class LoginComponent implements OnInit {
 
 
   login() {
+    console.log(this.model);
     this.authService.login(this.model)
       .subscribe( (result) => {
-        const user = result;
-        console.log(user);
-        // localStorage.setItem('currentUser', JSON.stringify(user));
-        // console.log(localStorage.getItem('currentUser'));
+
         this.route.navigate(['/shop']);
 
-      },(error) => {
-        console.log('error login: ' + error);
+      }, (error) => {
+        console.log('error login: ' + JSON.stringify(error));
         this.notValid = true;
       });
 

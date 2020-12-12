@@ -23,7 +23,7 @@ export class ProductItemComponent implements OnInit {
     console.log();
   }
   handlerAddToCart(){
-    this.cartService.addProductToCart(this.productItem, 1).subscribe(() => {
+    this.cartService.addProductToCart(this.productItem).subscribe(() => {
       this.msg.sendMsg(this.productItem);
     });
   }

@@ -5,13 +5,13 @@
 <form action="">
   <div class="from-group">
     <label class="form">From</label>
-    <input type="number" id="from" class="form-control">
+    <input type="number" id="from" class="form-control" #fromInput="ngModel" [(ngModel)]="model.fromInput" name="fromInput" >
   </div>
   <div class="from-group">
     <label class="form">To</label>
-    <input type="number" id="to" class="form-control">
+    <input type="number" id="to" class="form-control" #toInput="ngModel" name="toInput" [(ngModel)]="model.toInput">
   </div>
-  <button class="btn btn-outline-dark btn-block mt-3 btn-sm">Filter by price</button>
+  <button class="btn btn-outline-dark btn-block mt-3 btn-sm" (click)="HandlerOnchange()">Filter by price</button>
 </form>
 </div>
 </div>

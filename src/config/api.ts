@@ -7,6 +7,7 @@ export const cartUrl = baseUrl + '/cart';
 export const likeslistUrl = baseUrl + '/likeslist';
 export const loginUrl = baseUrl + '/login';
 export const registerUrl = baseUrl + '/register';
+export const userUrl = baseUrl + '/users';
 
 
 

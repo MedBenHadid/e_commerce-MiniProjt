@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MessengerService} from '../../../services/messenger.service';
 
 @Component({
   selector: 'app-filters',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filters.component.css']
 })
 export class FiltersComponent implements OnInit {
+  model: any = {};
 
-  constructor() { }
+
+  constructor(private msg: MessengerService) { }
 
   ngOnInit(): void {
   }
 
+  HandlerOnchange() {
+    this.msg.sendMsgfilter(this.model);
+  }
 }
