@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   private gapiSetup: boolean;
   private authInstance: any;
   notValid = false;
+  private CurrentUserFromStorege: any;
 
   constructor(private loginService: LoginService,
               private authService: AuthServiceService,
@@ -25,7 +26,13 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.initForm();
+    this.CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
+    if (this.CurrentUserFromStorege !== null) {
+      this.route.navigate(['/shop']);
+    }
+
+      this.initForm();
+
   }
 
   initForm() {

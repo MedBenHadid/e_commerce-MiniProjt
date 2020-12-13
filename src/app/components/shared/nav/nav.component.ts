@@ -3,10 +3,11 @@ import {MessengerService} from '../../../services/messenger.service';
 import {LoginService} from '../../../services/login.service';
 import {tokens} from '../../../../environments/environment';
 import {JsonFormatter} from 'tslint/lib/formatters';
-import {Router} from '@angular/router';
+import {NavigationEnd, Router, RouterEvent} from '@angular/router';
 import {AuthServiceService} from '../../../services/auth-service.service';
 import { FormsModule } from '@angular/forms';
 import {User} from '../../../models/user';
+import {filter} from 'rxjs/operators';
 
 
 @Component({
@@ -17,6 +18,8 @@ import {User} from '../../../models/user';
 
 export class NavComponent implements OnInit {
   private thatlocation: any;
+  private isConnectedByGoogle: boolean;
+  private user: any;
   constructor(private msg: MessengerService,
               private loginService: LoginService,
               private route: Router,
@@ -31,9 +34,23 @@ export class NavComponent implements OnInit {
 
    ngOnInit(){
 
-     this.CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
-      console.log('CurrentUser : ' + JSON.stringify(this.CurrentUserFromStorege));
-         // this.isLogin = await this.loginService.checkIfUserAutehenticated();
+     this.user = JSON.parse(localStorage.getItem('currentUser'));
+     this.authService.getEmitter().subscribe((customObject) => {
+       this.user = customObject;
+     });
+     if (this.user.xt) {
+       this.isConnectedByGoogle = true;
+       console.log("google");
+       this.CurrentUserFromStorege = this.user.xt;
+       this.CurrentUserFromStorege.isAdmin = 0;
+       console.log('CurrentUser : ' + JSON.stringify(this.CurrentUserFromStorege.Ad));
+
+     }else {
+       this.isConnectedByGoogle = false;
+
+       this.CurrentUserFromStorege = this.user;
+     }
+     // this.isLogin = await this.loginService.checkIfUserAutehenticated();
 
         if (this.CurrentUserFromStorege != null){
           this.isLogin = true;
@@ -55,8 +72,7 @@ isAuth(){
 logout(){
     this.authService.logout();
     this.route.navigate(['/login']).then(() => console.log('/shop'));
-
-   this.loginService.signOut();
+    this.loginService.signOut();
 }
 
 

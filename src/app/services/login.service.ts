@@ -53,7 +53,7 @@ export class LoginService {
     );
       // gapi.load('auth2', this.user);
 
-      sessionStorage.setItem('userGoogleToken', this.user.xc.access_token);
+      localStorage.setItem('currentUser', JSON.stringify(this.user));
       await this.route.navigate(['/shop']);
     });
 
@@ -61,7 +61,7 @@ export class LoginService {
 
     signOut() {
       gapi.auth2.getAuthInstance().signOut().then( () => {
-        sessionStorage.removeItem('userGoogleToken');
+        localStorage.removeItem('currentUser');
         this.route.navigate(['/shop']).then(r => {
           console.log('User signed out.');
         });

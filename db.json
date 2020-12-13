@@ -100,29 +100,29 @@
     },
     {
       "id": 2,
-      "name": "Product 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+      "name": "kdkdjsqppd",
+      "description": "ihdaso",
       "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-      "price": "59"
+      "price": "4"
     },
     {
       "id": 3,
-      "name": "Product 5",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+      "name": "39",
+      "description": "sdihl",
       "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
-      "price": "90"
+      "price": "20"
     },
     {
-      "name": "eorii",
-      "description": "iuhrkj",
-      "price": 33,
-      "imgUrl": "C:\\fakepath\\30414575_2165382533488580_3811107915499044864_o.jpg",
-      "id": 4
+      "name": "fkjez",
+      "description": "disinfmsql",
+      "price": "30",
+      "imgUrl": "assets/pc.jpg",
+      "id": 5
     }
   ],
   "likeslist": [
     {
-      "id": 1,
+      "id": 4,
       "idUser": 3
     }
   ],
@@ -162,58 +162,13 @@
     },
     {
       "product": {
-        "id": 1,
-        "name": "Product 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-        "imgUrl": "https://www.deltarentals.com.au/wp-content/uploads/2019/04/Budget-Gaming-PC-1.jpg",
-        "price": "29"
-      },
-      "idUser": 3,
-      "id": 6
-    },
-    {
-      "product": {
         "id": 2,
         "name": "Product 3",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
         "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
         "price": "59"
       },
-      "idUser": 3,
-      "id": 8
-    },
-    {
-      "product": {
-        "id": 2,
-        "name": "Product 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-        "price": "59"
-      },
-      "idUser": 3,
-      "id": 9
-    },
-    {
-      "product": {
-        "id": 2,
-        "name": "Product 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-        "price": "59"
-      },
-      "idUser": 3,
-      "id": 10
-    },
-    {
-      "product": {
-        "id": 2,
-        "name": "Product 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-        "price": "59"
-      },
-      "idUser": 3,
-      "id": 11
+      "id": 7
     }
   ],
   "posts": [

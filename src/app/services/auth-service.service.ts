@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {EventEmitter, Injectable, Output} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {loginUrl, registerUrl} from '../../config/api';
@@ -15,6 +15,7 @@ const helper = new JwtHelperService();
 export class AuthServiceService {
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
+  @Output() IsLoggedIn: EventEmitter<any> = new EventEmitter<any>();
   constructor(private http: HttpClient,private userService: UserService) {
     this.currentUserSubject = new BehaviorSubject<User>(localStorage.getItem('id'));
     this.currentUser = this.currentUserSubject.asObservable();
@@ -32,6 +33,7 @@ export class AuthServiceService {
         this.userService.getById(user.id)
           .pipe(first())
           .subscribe( (res) => {
+              user.id = res.id;
               user.email  = res.email;
               user.firstName = res.firstName;
               user.lastName = res.lastName;
@@ -40,9 +42,9 @@ export class AuthServiceService {
               user.profilePicture = res.profilePicture;
               console.log(user);
               localStorage.setItem('currentUser', JSON.stringify(user));
+              this.IsLoggedIn.emit(user);
 
           });
-
 
       }
 
@@ -52,6 +54,9 @@ export class AuthServiceService {
 
   }
 
+  getEmitter(){
+    return this.IsLoggedIn;
+  }
 
   logout() {
     localStorage.clear();
@@ -60,3 +65,4 @@ export class AuthServiceService {
   }
 
 }
+

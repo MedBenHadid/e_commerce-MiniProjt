@@ -3,6 +3,7 @@ import {Product} from '../../../../models/product';
 import {MessengerService} from '../../../../services/messenger.service';
 import {CartService} from '../../../../services/cart.service';
 import {LikeslistService} from '../../../../services/likeslist.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product-item',
@@ -16,16 +17,24 @@ export class ProductItemComponent implements OnInit {
   constructor(
     private msg: MessengerService,
     private cartService: CartService,
-    private likesService: LikeslistService
+    private likesService: LikeslistService,
+    private route: Router
+
   ) {  }
 
   ngOnInit(): void {
     console.log();
   }
   handlerAddToCart(){
-    this.cartService.addProductToCart(this.productItem).subscribe(() => {
-      this.msg.sendMsg(this.productItem);
-    });
+    const CurrentUserFromStorege = JSON.parse(localStorage.getItem('currentUser'));
+    if (CurrentUserFromStorege !== null) {
+      this.cartService.addProductToCart(this.productItem).subscribe(() => {
+        this.msg.sendMsg(this.productItem);
+      });
+    }else{
+      this.route.navigate(['/login']);
+
+    }
   }
   handlerToAddToLikeslist(){
     this.likesService.addToLikesList(this.productItem.id).subscribe(() => {

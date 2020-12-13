@@ -22,7 +22,6 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.loadLikeslist();
     this.loadProducts();
-    // console.log("userFromStoregeInProductList: " + sessionStorage.getItem('currentUser'));
     this.msg.getMsg().subscribe((val: string) => {
       if ( val !== '' ){
         console.log(val);
@@ -34,13 +33,14 @@ export class ProductListComponent implements OnInit {
       }
     });
 
+
     this.msg.getMsgfilter().subscribe((filterModel) => {
-      let productListCopy
       if (filterModel){
-        if (!filterModel.fromInput){
+        if (!filterModel.fromInput ){
           this.productList = this.productList.filter(item => {
             return item.price < filterModel.toInput;
           });
+          this.loadProducts();
 
         }else if(!filterModel.toInput){
           this.productList = this.productList.filter(item => {
