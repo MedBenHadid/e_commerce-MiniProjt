@@ -17,7 +17,7 @@ export class AuthServiceService {
   public currentUser: Observable<User>;
   @Output() IsLoggedIn: EventEmitter<any> = new EventEmitter<any>();
   constructor(private http: HttpClient,private userService: UserService) {
-    this.currentUserSubject = new BehaviorSubject<User>(localStorage.getItem('id'));
+    this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
     this.currentUser = this.currentUserSubject.asObservable();
   }
 
