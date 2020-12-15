@@ -88,42 +88,54 @@
       "confirmPassword": "aaaaa",
       "isAdmin": 0,
       "id": 10
+    },
+    {
+      "email": "mohamed.benhadid1@esprit.tn",
+      "password": "$2a$10$35D3nAOU6c9XGzwPT.t1.O8ymoL.DmnoTdwKlKW9kBeOiy67sSQB.",
+      "firstName": "mohamed",
+      "lastName": "ben hadid",
+      "username": "medbenhadid",
+      "confirmPassword": "aaaaa",
+      "isAdmin": 0,
+      "id": 11
     }
   ],
   "products": [
     {
-      "id": 1,
-      "name": "Product 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-      "imgUrl": "https://www.deltarentals.com.au/wp-content/uploads/2019/04/Budget-Gaming-PC-1.jpg",
-      "price": "29"
-    },
-    {
       "id": 2,
-      "name": "kdkdjsqppd",
-      "description": "ihdaso",
+      "name": "Product 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
       "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-      "price": "4"
+      "price": "90"
     },
     {
       "id": 3,
-      "name": "39",
-      "description": "sdihl",
+      "name": "Producr 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
       "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
       "price": "20"
     },
     {
-      "name": "fkjez",
-      "description": "disinfmsql",
-      "price": "30",
+      "name": "Product X",
+      "description": "produit X",
+      "price": "100",
       "imgUrl": "assets/pc.jpg",
-      "id": 5
+      "id": 6
     }
   ],
   "likeslist": [
     {
       "id": 4,
       "idUser": 3
+    },
+    {
+      "id": 1
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 5
     }
   ],
   "cart": [
@@ -162,13 +174,183 @@
     },
     {
       "product": {
+        "id": 3,
+        "name": "Producr 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
+        "price": "20"
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Producr 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
+        "price": "20"
+      },
+      "id": 9
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Producr 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
+        "price": "20"
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Producr 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
+        "price": "20"
+      },
+      "id": 11
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Producr 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
+        "price": "20"
+      },
+      "id": 12
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Producr 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/2e466-newcase_config600x600.png",
+        "price": "20"
+      },
+      "id": 13
+    },
+    {
+      "product": {
         "id": 2,
         "name": "Product 3",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
         "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-        "price": "59"
+        "price": "90"
       },
-      "id": 7
+      "id": 14
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 15
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 16
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 17
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 18
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 19
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 20
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 21
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 22
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 23
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 24
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "id": 25
     }
   ],
   "posts": [
