@@ -48,7 +48,7 @@ export class ProductListComponent implements OnInit {
           });
         }else{
           this.productList = this.productList.filter(item => {
-            return item.price > filterModel.fromInput && item.price < filterModel.toInput;
+            return item.price > filterModel.  fromInput && item.price < filterModel.toInput;
           });
         }
 

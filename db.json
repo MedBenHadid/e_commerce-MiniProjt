@@ -117,7 +117,7 @@
     },
     {
       "name": "Product X",
-      "description": "produit X",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
       "price": "100",
       "imgUrl": "assets/pc.jpg",
       "id": 6
@@ -132,46 +132,14 @@
       "id": 1
     },
     {
-      "id": 3
+      "id": 5
     },
     {
-      "id": 5
+      "id": 2,
+      "idUser": 4
     }
   ],
   "cart": [
-    {
-      "product": {
-        "id": 2,
-        "name": "Product 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-        "price": "59"
-      },
-      "idUser": 4,
-      "id": 3
-    },
-    {
-      "product": {
-        "id": 2,
-        "name": "Product 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-        "price": "59"
-      },
-      "idUser": 4,
-      "id": 4
-    },
-    {
-      "product": {
-        "id": 2,
-        "name": "Product 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
-        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
-        "price": "59"
-      },
-      "idUser": 4,
-      "id": 5
-    },
     {
       "product": {
         "id": 3,
@@ -351,6 +319,28 @@
         "price": "90"
       },
       "id": 25
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "idUser": 3,
+      "id": 28
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore, magnam. Culpa doloribus dolorum ducimus eaque in provident reprehenderit. Atque earum fugiat minima tenetur velit. Dicta facilis mollitia quisquam voluptate?",
+        "imgUrl": "https://www.xidax.com/skins/default/images/86c18-phantexwhiteconfig600x600-1-.png",
+        "price": "90"
+      },
+      "idUser": 3,
+      "id": 29
     }
   ],
   "posts": [
